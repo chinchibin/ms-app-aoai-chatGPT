@@ -546,6 +546,7 @@ async def send_chat_request(request):
 
     try:
         azure_openai_client = init_openai_client()
+        logging.info(model_args)
         response = await azure_openai_client.chat.completions.create(**model_args)
 
     except Exception as e:
