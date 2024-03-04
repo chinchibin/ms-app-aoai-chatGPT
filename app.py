@@ -461,7 +461,7 @@ def get_configured_data_source():
         if AZURE_OPENAI_EMBEDDING_NAME:
             embeddingDependency = {
                 "type": "DeploymentName",
-                "endpoint": AZURE_OPENAI_EMBEDDING_ENDPOINT,
+                "embeddingEndpoint": AZURE_OPENAI_EMBEDDING_ENDPOINT,
                 "deploymentName": AZURE_OPENAI_EMBEDDING_NAME,
                 "authentication": {
                     "type": "APIKey",
